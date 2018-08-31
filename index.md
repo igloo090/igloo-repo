@@ -3,12 +3,6 @@
 ## Comming Soon :)
 
 <ul>
-	{% for post in site.categories.[Categoty_Default] %}
-	<li><a href="{{ post.url }}">{{ post.title }}</a></li>
-	{% endfor %}
-</ul>
-
-<ul>
     <li>
       <a href="/posts/2018-09-01-test-post.md">test post</a>
     </li>
