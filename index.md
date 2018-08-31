@@ -4,7 +4,7 @@
 
 <ul>
     <li>
-      <a href="{{ /posts/2018-09-01-test-post.md }}">{{ post.title }}</a>
+      <a href="/posts/2018-09-01-test-post.md">test post</a>
     </li>
 </ul>
 
