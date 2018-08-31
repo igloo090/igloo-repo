@@ -3,11 +3,9 @@
 ## Comming Soon :)
 
 <ul>
-  {% for post in site.posts %}
     <li>
-      <a href="{{ post.url }}">{{ post.title }}</a>
+      <a href="{{ /posts/2018-09-01-test-post.md }}">{{ post.title }}</a>
     </li>
-  {% endfor %}
 </ul>
 
 <!--
