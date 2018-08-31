@@ -2,6 +2,8 @@
 
 ## Comming Soon :)
 
+<title>{{ page.title }}</title>
+
 <ul>
     <li>
       <a href="/posts/2018-09-01-test-post.md">test post</a>
