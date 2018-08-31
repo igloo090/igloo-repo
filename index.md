@@ -2,7 +2,6 @@
 
 ## Comming Soon :)
 
-<title>{{ page.title }}</title>
 
 <ul>
     <li>
