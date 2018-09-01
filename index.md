@@ -5,7 +5,7 @@
 
 <ul>
     <li>
-      <a href="/posts/2018-09-01-test-post.md">test post</a>
+      <a href="master/posts/2018-08-31-test-post.md">test post</a>
     </li>
 </ul>
 
