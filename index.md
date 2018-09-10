@@ -2,13 +2,6 @@
 
 ## Comming Soon :)
 
-
-<ul>
-    <li>
-      <a href="master/_posts/2018-09-09-post.md">test post</a>
-    </li>
-</ul>
-
 <ul>
   {% for post in site.posts %}
     <li>
