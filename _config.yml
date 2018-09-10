@@ -1,2 +1,31 @@
-theme: jekyll-theme-minimal
-category_dir: category/
+# Site settings
+title: my blog test
+description: "my blog description"
+url: "https://igloo090.github.io"
+author:
+  name: "Seok Jin Choi"
+  email: "csj8791@naver.com"
+  url: "https://igloo090.github.io"
+
+# Build settings
+baseurl: /
+markdown: kramdown
+source: .
+destination: ./_stie
+permalik: /:title
+pagenate: 8
+pagenate_path: /page:num/
+
+# Default values
+default:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    value:
+      layout: "post"
+
+# theme: jekyll-theme-minimal
+# category_dir: category/
+
+
