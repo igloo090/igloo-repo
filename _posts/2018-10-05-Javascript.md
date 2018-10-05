@@ -47,7 +47,6 @@ if('1' == 1)  // true (자동 형변환)
 ```javascript
 // 멤버 변수나 메소드가 많아지면 한줄로 쓰는 것은 좋지 않다. 
 var user = {name: "Tom", age: 20, };
-
 // Method 전에 한줄 공백이 있으면 좋다.
 var user = {
     name: "Tom",
