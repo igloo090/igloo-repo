@@ -1,6 +1,7 @@
 ---
 type: post
 title: "Javascript Loading"
+category: javascript
 ---
 
 1. HTML에서 Javascript 로드 방식
