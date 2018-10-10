@@ -1,6 +1,7 @@
 ---
 type: post
 title: "Javascript Clean Code"
+category: javascript
 ---
 
 1. Code Convention : Camel Case
