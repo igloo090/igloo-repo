@@ -3,7 +3,7 @@ type: post
 title: "Javascript Loading"
 ---
 
-1. HTML에서 Javascript 로드 방식
+#### 1. HTML에서 Javascript 로드 방식
 A. inline
 태그에 Javascript를 기술하는 방식이다. 
 직관적이기 때문에 소규모 프로젝트에서는 유용하겠지만, 대규모 프로젝트의 경우 유지보수에 어려움을 야기할 수 있다. 
@@ -36,7 +36,7 @@ D. script(CDN, Contents Delivery Network)
 ```
 위와 같이 URL을 통해 Javascript Library를 다운로드하고 로드한다. 
 
-2. HTML에서 Javascript 로드 위치
+#### 2. HTML에서 Javascript 로드 위치
 A. `<head>` 태그 내부
 B. `<body>` 태그 내부
 결론적으로 `<body>` 태그 내부, 가장 하단에 위치하는 것이 가장 좋은 방법이다. 
