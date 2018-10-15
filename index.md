@@ -1,6 +1,4 @@
-## Welcome to My Pages
-
-## Comming Soon :)
+## Welcome :)
 
 <ul>
   {% for post in site.posts %}
@@ -10,31 +8,6 @@
   {% endfor %}
 </ul>
 
-1. Programming Language
-> 1. Java
-> 2. HTML
-> 3. JavaScript
-
-2. Framework
-> 1. JSP Servlet
-> 2. Spring
-> 3. Spring Boot
-> 4. Spring Cloud
-
-3. Architecture/Pattern
-> 1. MSA
-> 2. RPC
-> 3. MVC
-
-4. Tool
-> 1. Maven
-> 2. Gradle
-> 3. Git
-> 4. Eclipse
-> 5. Android Studio
-
-5. Story
-> 1. 블로그를 시작하며
 
 <!--
 You can use the [editor on GitHub](https://github.com/igloo090/igloo090.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
