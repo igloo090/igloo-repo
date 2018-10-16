@@ -1,6 +1,9 @@
 ---
-type: post
+layout: post
 title: "Javascript Loading"
+subtitle: "HTML에서 Javascript 로드하는 방법"
+date: 2018-10-16
+background: "/background.jpg"
 ---
 
 #### 1. HTML에서 Javascript 로드 방식
