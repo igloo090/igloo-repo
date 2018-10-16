@@ -1,7 +1,8 @@
 ---
-type: post
+layout: post
 title: "Javascript Clean Code"
-category: javascript
+subtitle: "Javascript 소스코드 관련 팁"
+background: "/background.jpg"
 ---
 
 1. Code Convention : Camel Case
