@@ -6,9 +6,9 @@ baseurl:           ""
 url:               "https://igloo090.github.io/"
 
 # Social Profiles
-#twitter_username:  SBootstrap
-#github_username:   BlackrockDigital
-#facebook_username: StartBootstrap
+twitter_username:  testtw
+github_username:   testgit
+facebook_username: testfb
 
 # Build settings
 markdown:          kramdown
