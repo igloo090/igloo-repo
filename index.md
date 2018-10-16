@@ -1,5 +1,6 @@
 ---
 layout: home
+background: '/background.jpg'
 ---
 
 ## Welcome :)
