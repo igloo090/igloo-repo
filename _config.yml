@@ -19,3 +19,4 @@ plugins:
   - jekyll-paginate
   
 remote_theme: BlackrockDigital/startbootstrap-clean-blog-jekyll
+#https://github.com/BlackrockDigital/startbootstrap-clean-blog-jekyll
