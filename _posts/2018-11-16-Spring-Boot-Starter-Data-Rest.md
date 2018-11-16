@@ -9,7 +9,7 @@ background: "/background.jpg"
 
 ***
 
-### Spring Boot Starter Data Rest  
+## Spring Boot Starter Data Rest  
 Spring Boot에서는 쉽고 간편하게 의존성을 관리할 수 있는 Starter를 제공하고 있다.  
 이번에 소개하려고 하는 spring-boot-starter-data-rest도 Starter 중 하나이다.  
 Spring Boot로 웹 어플리케이션을 만들 때 매번 같은 작업을 반복하게 되고 비슷한 의존성을 가지게 된다.  
@@ -19,7 +19,7 @@ Spring Boot로 웹 어플리케이션을 만들 때 매번 같은 작업을 반�
 
 ***
 
-### Features 
+## Features 
 공식 문서에 나온 대표적인 기능에 대해 알아보도록 한다.  
 1. Exposes collection, item and association resources representing your model.  
 : 저장소(Repository)에 있는 리소스를 Rest API로 노출한다.  
@@ -34,14 +34,15 @@ REST 규칙 중에서 HATEOAS는 굉장히 중요한 부분이다.
 
 ***
 
-### Quick Start
+## Quick Start
 
-1. Project 생성.  
-: [Spring Initializr](https://start.spring.io/) 혹은 IDE를 통해 프로젝트를 생성한다.  
-2. 의존성 추가.  
-: pom.xml 파일에 spring-boot-starter-data-rest 의존성을 추가한다.  
+#### Project 생성  
+[Spring Initializr](https://start.spring.io/) 혹은 IDE를 통해 프로젝트를 생성한다.  
+
+#### 의존성 추가  
+pom.xml 파일에 spring-boot-starter-data-rest 의존성을 추가한다.  
 jpa와 h2 의존성은 테스트를 위해 메모리 데이터베이스를 사용하기 위해 추가한다.  
-```
+```xml
 <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
@@ -64,9 +65,10 @@ jpa와 h2 의존성은 테스트를 위해 메모리 데이터베이스를 사�
     </dependency>
 </dependencies>
 ```
-3. Spring Boot로 어플리케이션을 구성.  
-: @SpringBootApplication 어노테이션을 사용하여 어플리케이션 실행 환경을 만든다.  
-```
+
+#### Spring Boot로 어플리케이션을 구성  
+`@SpringBootApplication` 어노테이션을 사용하여 어플리케이션 실행 환경을 만든다.  
+```java
 @SpringBootApplication
 public class DataRestDemoApplication {
 	
@@ -75,11 +77,12 @@ public class DataRestDemoApplication {
 	}
 }
 ```
-4. JDO 구현.  
-: JDO(Java Data Object)를 구현한다.  
+
+#### JDO 구현  
+JDO(Java Data Object)를 구현한다.  
 Lombok을 사용하거나 직접 구현 한다.  
 Eclipse를 사용중이라면 우클릭 메뉴에서 Source-Generate Getters and Setters 기능을 이용하자.  
-```
+```java
 @Entity
 public class Person {
 	private @Id @GeneratedValue Long id;
@@ -108,9 +111,10 @@ public class Person {
 }
 
 ```
-5. Repository 구현.  
+
+#### Repository 구현  
 의존성에서 확인할 수 있겠지만 여기에서는 JPA를 사용하기 때문에 Repository는 Spring에서 제공하는 CrudRepository/JpaRepository 등을 사용하면 된다.  
-```
+```java
 public interface PersonRepository extends CrudRepository<Person, String> {}
 ```
 
@@ -124,11 +128,11 @@ http://localhost:8080/profile/persons
 즉, PersonRepository를 구현하였고 이에 대해 Person(맨 첫글자를 소문자 + s 형태)에 대한 REST Api가 노출되어 있고 Self Description 규칙을 따르기 때문에 REST Api가 설명된다.  
 
 간단하게 REST Api 호출로 데이터 하나를 생성해보고 결과를 확인해보자.  
-1. 호출  
+호출  
 ```
 curl -X POST localhost:8080/persons -d "{\"name\": \"james\", \"age\": \"10\"}" -H "Content-Type:application/json"
 ```
-2. 결과  
+결과  
 ```
 {
     "_embedded": {
