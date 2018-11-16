@@ -41,7 +41,7 @@ REST 규칙 중에서 HATEOAS는 굉장히 중요한 부분이다.
 2. 의존성 추가.  
 : pom.xml 파일에 spring-boot-starter-data-rest 의존성을 추가한다.  
 jpa와 h2 의존성은 테스트를 위해 메모리 데이터베이스를 사용하기 위해 추가한다.  
-```xml
+```
 <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
@@ -66,7 +66,7 @@ jpa와 h2 의존성은 테스트를 위해 메모리 데이터베이스를 사�
 ```
 3. Spring Boot로 어플리케이션을 구성.  
 : @SpringBootApplication 어노테이션을 사용하여 어플리케이션 실행 환경을 만든다.  
-```java
+```
 @SpringBootApplication
 public class DataRestDemoApplication {
 	
@@ -79,7 +79,7 @@ public class DataRestDemoApplication {
 : JDO(Java Data Object)를 구현한다.  
 Lombok을 사용하거나 직접 구현 한다.  
 Eclipse를 사용중이라면 우클릭 메뉴에서 Source-Generate Getters and Setters 기능을 이용하자.  
-```java
+```
 @Entity
 public class Person {
 	private @Id @GeneratedValue Long id;
@@ -110,7 +110,7 @@ public class Person {
 ```
 5. Repository 구현.  
 의존성에서 확인할 수 있겠지만 여기에서는 JPA를 사용하기 때문에 Repository는 Spring에서 제공하는 CrudRepository/JpaRepository 등을 사용하면 된다.  
-```java
+```
 public interface PersonRepository extends CrudRepository<Person, String> {}
 ```
 
