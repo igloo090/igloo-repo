@@ -27,7 +27,7 @@ Apache Maven(이하 Maven)은 Java 진영에서 많이 사용되는 빌드 도�
 Maven은 프로젝트의 빌드를 위해 빌드 라이프사이클(Build Lifecycle)을 정의하였다.  
 Default, Clean, Site 3가지의 표준을 정의하였으며 라이프사이클은 여러 페이즈들을 일련의 순서로 실행하는 것을 의미한다.  
 빌드 라이프사이클의 주요 페이즈의 순서는 아래와 같다.  
-![Maven Build Lifecycle](../images/2018-11-21-Maven-Plugin/Maven-Build-Lifecycle.png)
+![Maven Build Lifecycle](../images/2018-11-21-Maven-Build-Lifecycle.PNG)
 
 현재 목표로 하고 있는 프로젝트는 Spring + React 구조이며 Maven으로 빌드 시 Webpack 빌드도 수행되어야 한다.  
 이러한 구조의 프로젝트 설정을 아래에서 설명한다.  
