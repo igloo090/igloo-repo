@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Google Material UI with Raw CSS"
-subtitle: "About Google Material UI with Raw CSS"
+title: "Material UI with Raw CSS"
+subtitle: "About Material UI with Raw CSS"
 background: "/background.jpg"
 ---
 
